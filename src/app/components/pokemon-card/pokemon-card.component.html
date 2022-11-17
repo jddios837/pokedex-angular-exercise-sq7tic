@@ -1,0 +1,28 @@
+<div class="pokemon-card">
+  <ng-container *ngIf="pokemon">
+    <!--h3> This pokemon's name </h3-->
+    <!-- This image should show the default front view of this pokemon  -->
+    <!--img loading="lazy" class="pokemon-sprite" /-->
+    <section class="pokemon-data">
+      <details>
+        <summary>ID</summary>
+        <!-- This pokemon's ID -->
+      </details>
+      <details>
+        <summary>Types</summary>
+        <!-- List of types this pokemon has. -->
+      </details>
+      <details>
+        <summary>Abilities</summary>
+        <!-- List of moves that this pokemon has. -->
+      </details>
+      <details>
+        <summary>Moves</summary>
+        <!-- List of moves that this pokemon can learn. -->
+      </details>
+    </section>
+  </ng-container>
+  <ng-container *ngIf="error">
+    <!--h3 class="pokemon-error"> Error text when our search went wrong. </h3-->
+  </ng-container>
+</div>

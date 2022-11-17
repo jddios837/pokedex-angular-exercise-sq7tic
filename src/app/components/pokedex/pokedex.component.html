@@ -1,0 +1,19 @@
+<section class="pokedex">
+  <form class="pokedex-search-form">
+    <h2>Pokedex Component</h2>
+    <fieldset>
+      <input
+        type="text"
+        placeholder="Pokemon name or ID"
+        [(ngModel)]="pokemonTex"
+      />
+      <button type="submit" (ngOnclick)="searchPokemon()">
+        Search Pokemon
+      </button>
+    </fieldset>
+  </form>
+  <article class="pokedex-container">
+    <!-- Here goes all of this pokemon's information. -->
+    
+  </article>
+</section>
